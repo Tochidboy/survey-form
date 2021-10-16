@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="Icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d0ef641dab.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+  <!--Side bar-->
+  <div class="sidebar">
+    <ul class="nav">
+      <li>
+        <a href="#">
+          <i class="fab fa-facebook fa-3x"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fab fa-twitter fa-3x  twitter"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fab fa-youtube fa-3x  youtube"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fab fa-whatsapp fa-3x  whatsapp"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fab fa-app-store-ios fa-3x  app-store"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fas fa-phone fa-3x  phone"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <header>
+    <!--freepnglogos.com*-->
+    <h1 id="title">Brazen Airways Survey Form </h1>
+    <p id="description">Thanks for patronizing us, please kindly take this survey so we can serve you better.</p>
+  </header>
+  <main>
+    <form action="https://www.brazenco.com" id="survey-form">
+      <div class="group-head">
+
+
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" class="group-class" placeholder="Enter your Name">
+      </div>
+
+      <div class="group-head">
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" name="email" class="group-class" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="group-head">
+
+        <label for="number" id="number-label">How do you rate our services?</label>
+        <input type="number" id="number" name="number" min="1" max="10" class="group-class" placeholder="Number between 1-10" required>
+      </div>
+
+      <div class="group-head">
+
+        <label for="dropdown"></label>
+        <select id="dropdown" name="dropdown">
+          <option selected="selected" class="group-class">Where do you work?</option>
+          <option value="volvo">Federal Service</option>
+          <option value="saab">State Service</option>
+          <option value="fiat">Business owner</option>
+          <option value="audi">Unemployed</option>
+        </select>
+      </div>
+
+      <div class="group-head">
+        <p>Are you willing to acquire our Premium ticket?</p>
+        <label for="Yes">
+          <input type="radio" name="radio" value="Yes" id="radio_1" class="input-radio" />
+          Yes
+        </label>
+        <label for="No">
+          <input type="radio" name="radio" id="radio_2" value="No" class="input-radio" />
+          No
+        </label>
+        <label for="Later">
+          <input type="radio" name="radio" id="Later" value="later" class="input-radio" />
+          Later
+        </label>
+      </div>
+
+
+      <div class="group-head">
+        <p>When do you intend to travel?</p>
+
+        <label for="winter">
+          <input name="season" value="winter" type="checkbox" id="winter" class="input-checkbox" />Winter
+        </label>
+
+        <label for="summer">
+          <input name="season" value="summer" type="checkbox" id="summer" class="input-checkbox" />summer
+        </label>
+
+        <label for="thanksgiving">
+          <input name="season" value="thanksgiving" type="checkbox" id="thanksgiving" class="input-checkbox" />Thanksgiving
+        </label>
+
+        <label for="christmas">
+          <input name="season" value="christmas" id="christmas" type="checkbox" class="input-checkbox" />Christmas
+        </label>
+      </div>
+
+
+      <div class="group-head">
+        <p>Any comments or suggestions on how we can serve you better?</p>
+        <textarea id="comments" class="input-text" name="comment" placeholder="Enter your comment here"></textarea>
+      </div>
+
+      <div class="group-head">
+        <button type="submit" id="submit" class="end">
+          Submit
+        </button>
+      </div>
+
+    </form>
+  </main>
+
+</body>
+
+</html>
