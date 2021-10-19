@@ -238,6 +238,8 @@ main{
 
 .sidebar2 ul li{
 display: inline-block;
+  list-style: none;
+list-style-type: none;
 }
 
 .sidebar2 li a{
