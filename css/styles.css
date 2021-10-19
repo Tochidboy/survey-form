@@ -13,7 +13,6 @@ body{
         text-align: center;
 }
 
-
 /*sidebar*/
 .sidebar{
   text-align: left;
@@ -23,6 +22,10 @@ body{
   width: 4.6rem;
   height: 100%;
   z-index: 1;
+}
+
+.sidebar2{
+  display: none;
 }
 
 .sidebar ul li{
@@ -161,7 +164,7 @@ button{
 
 
   #title, #description{
-    padding: 13% 15%;
+    padding: 10% 15%;
     color: #000080;
     font-size:1.5rem;
     font-weight: 800;
@@ -196,28 +199,50 @@ main{
   margin-right: 0;
 }
 
-.sidebar{
-  float: left;
+.parents {
   position: fixed;
-  background: black;
+  top: 0;
+  left: 0;
+  margin: auto;
   width: 100%;
-  height: 2.5rem;
-  font-size: 0.5rem;
+  z-index: 2;
 }
 
-.sidebar ul li a:hover{
-  margin:0;
+.sidebar{
+  display: none;
 }
 
-.sidebar ul li{
- float: left;
-  margin-top: 0;
+.sidebar2{
+  display: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  font-size: 0.8rem;
+  height: 2.8rem;
 }
 
-.sidebar ul li a{
-  padding: 1rem 1rem;
+.fas,.fab{
+  color: blue;
 }
 
+.sidebar2 ul{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 0.3rem;
+
+}
+
+.sidebar2 ul li{
+display: inline-block;
+}
+
+.sidebar2 li a{
+  padding: 1rem 0.5rem;
+}
 
 
 html, body {
