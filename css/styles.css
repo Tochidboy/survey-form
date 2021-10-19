@@ -40,6 +40,7 @@ body{
   color: blue;
 }
 
+
 .fab.whatsapp:hover{
   color:#21ff05cc;
 }
@@ -158,13 +159,11 @@ button{
 
 @media only screen and (max-width:800px) {
 
-  header{
-    padding: 2% 15%;
-    font-weight: 800;
-  }
 
   #title, #description{
+    padding: 8% 15%;
     color: #000080;
+    font-size:1.5rem;
     font-weight: 800;
   }
 
@@ -190,25 +189,40 @@ select, input, #dropdown{
 
 
 main{
-  width: 94%;
+  width: 96%;
   color: white;
-  padding: 10% 6%;
-  margin-left: 1.5rem;
+  padding: 10% 3%;
   padding-right: 0;
   margin-right: 0;
 }
 
 .sidebar{
-    font-size: 0.5rem;
-    width: 3.0rem;
+  float: left;
+  position: fixed;
+  background: black;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 0.5rem;
+}
+
+.sidebar ul li a:hover{
+  margin:0;
 }
 
 .sidebar ul li{
-  margin: 4rem 0;
+ float: left;
+  margin-top: 0;
 }
 
+.sidebar ul li a{
+  padding: 0 2rem;
+}
+
+
+
 html, body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+
 }
 
 .end{
@@ -219,4 +233,5 @@ html, body {
 .group-head .input-text{
   font-size: 0.9rem;
 }
+
 }
